@@ -9,7 +9,8 @@ import seaborn as sns
 from sklearn.ensemble import RandomForestClassifier
 from numpy import cov
 
-
+df = pd.read_csv("/kaggle/input/cardiovascular-disease-dataset/cardio_train.csv",  header=0, sep=";")
+print (df)
 
 features = ["age","gender","height","weight", "ap_hi","ap_lo","gluc","cholesterol", "smoke", "active","alco"]
 X = df.loc[:, features]
