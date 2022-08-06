@@ -1,0 +1,7 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn
+
+seaborn.countplot(x='year',hue='cardio')
+#you can replace x and hue with any variables which you want to see in isolatoion
