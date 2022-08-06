@@ -11,3 +11,7 @@ from numpy import cov
 
 
 
+features = ["age","gender","height","weight", "ap_hi","ap_lo","gluc","cholesterol", "smoke", "active","alco"]
+X = df.loc[:, features]
+y = df.loc[:, ["cardio"]]
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=0, train_size = .8)
