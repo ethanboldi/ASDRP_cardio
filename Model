@@ -29,3 +29,6 @@ print("ACCURACY : ", accuracy_score(y_test, y_pred))
 
 feature_imp = pd.Series(clf.feature_importances_, index = features).sort_values(ascending = False)
 feature_imp
+
+cm = confusion_matrix(y_test,y_pred)
+cm
